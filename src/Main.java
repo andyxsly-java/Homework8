@@ -24,18 +24,44 @@ public class Main {
         int apple = 0;
         System.out.println(sense[apple]);
         //Задание 2
-        int[] numbers = new int[]{1, 2, 3};
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.print(numbers[i]);
-            if (i < numbers.length - 1) {
+        for (int i = 0; i < value.length; i++) {
+            System.out.print(value[i]);
+            if (i < value.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        for (int i = 0; i < meaning.length; i++) {
+            System.out.print(meaning[i]);
+            if (i < meaning.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        for (int i = 0; i < sense.length; i++) {
+            System.out.print(sense[i]);
+            if (i < sense.length - 1) {
                 System.out.print(", ");
             }
         }
         System.out.println();
         //Задание 3
-        int[] symbols = new int[]{1, 2, 3};
-        for (int i = symbols.length - 1; i >= 0; i--) {
-            System.out.print(symbols[i]);
+        for (int i = value.length - 1; i >= 0; i--) {
+            System.out.print(value[i]);
+            if (i > 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        for (int i = meaning.length - 1; i >= 0; i--) {
+            System.out.print(meaning[i]);
+            if (i > 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        for (int i = sense.length - 1; i >= 0; i--) {
+            System.out.print(sense[i]);
             if (i > 0) {
                 System.out.print(", ");
             }
